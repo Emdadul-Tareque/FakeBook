@@ -12,11 +12,11 @@ const Post = () => {
     }, [])
 
     return (
-        <div>
-            {
-                posts.map(post => <Posts post = {post} seeMoreButton = {true}></Posts>)
-            }
-        </div>
+      <div>
+        {posts.map((post) => (
+          <Posts key={post.id} post={post} seeMoreButton={true}></Posts>
+        ))}
+      </div>
     );
 };
 
