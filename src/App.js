@@ -1,10 +1,9 @@
 import React from 'react';
 import './App.css';
 import Header from './Components/Header/Header';
-import Post from './Components/Post/Post';
-
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Details from './Components/Details/Details';
+import Body from './Components/Body/Body';
 
 function App() {
   return (
@@ -13,7 +12,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/">
-            <Post></Post>
+            <Body></Body>
           </Route>
           <Route path="/detail/:key">
             <Details></Details>
